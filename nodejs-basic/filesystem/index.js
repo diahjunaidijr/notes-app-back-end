@@ -1,0 +1,19 @@
+/*** VERSI ASYNC */
+
+const fs = require('fs');
+ 
+// const fileReadCallback = (error, data) => {
+//     if(error) {
+//         console.log('Gagal membaca berkas');
+//         return;
+//     }
+//     console.log(data);
+// };
+ 
+// fs.readFile('./filesystem/notes.txt', 'UTF-8', fileReadCallback);
+
+
+/*** VERSI SYNC */
+
+const data = fs.readFileSync('./filesystem/notes.txt', 'utf-8');
+console.log(data);
